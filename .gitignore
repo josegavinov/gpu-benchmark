@@ -7,3 +7,5 @@ build/
 # Archivos temporales de editores
 *.swp
 *~
+.claude
+CLAUDE.md
