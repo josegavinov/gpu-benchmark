@@ -1,0 +1,5 @@
+# Normalización de fines de línea.
+# Los scripts Bash DEBEN mantener LF siempre: con CRLF fallan en Ubuntu
+# ("bad interpreter", errores de \r). El resto se normaliza a LF en el repo.
+* text=auto eol=lf
+*.sh text eol=lf

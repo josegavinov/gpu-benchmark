@@ -1,0 +1,9 @@
+# Artefactos de compilación (out-of-source: siempre dentro de build/)
+build/
+
+# Respaldos automáticos de CSV creados por scripts/run_benchmark.sh
+*.bak-*
+
+# Archivos temporales de editores
+*.swp
+*~
