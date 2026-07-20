@@ -89,7 +89,10 @@ VectorAddKernel::VectorAddKernel(cl_context context, cl_device_id device) {
     cl_int status = CL_SUCCESS;
 
     // 1. Crear el objeto programa a partir del fuente embebido.
-    program_ = clCreateProgramWithSource(context, 1, &kKernelSource, nullptr, &status);
+    // El API C pide const char** (sin const en el puntero exterior), asi que
+    // el fuente se pasa via una variable local no-constexpr.
+    const char* source = kKernelSource;
+    program_ = clCreateProgramWithSource(context, 1, &source, nullptr, &status);
     CL_CHECK(status);
 
     // 2. Compilar para el dispositivo (compilación ONLINE, propia de OpenCL;
