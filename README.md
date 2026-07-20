@@ -101,6 +101,6 @@ SIZES="1000 2000" REPS=3 ./scripts/run_benchmark.sh \
 
 - [x] Fase 1a — Infraestructura común (CSV, datos, verificación, timing)
 - [x] Fase 1b — Vector Addition en CUDA (validado en el servidor: 2026-07-19)
-- [ ] Fase 1c — Scripts de automatización (5 tamaños × 30 repeticiones)
-- [ ] Fase 2 — Vector Addition en OpenCL
+- [x] Fase 1c — Scripts de automatización (validado: 150/150 PASS en 33 s)
+- [x] Fase 2 — Vector Addition en OpenCL (validado en el servidor: 2026-07-19)
 - [ ] Fase 3 — Matrix Multiplication, Reduction, Prefix Sum
