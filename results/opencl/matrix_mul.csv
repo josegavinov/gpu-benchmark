@@ -1,0 +1,2 @@
+Framework,Benchmark,ProblemSize,Iteration,HostToDevice_ms,Kernel_ms,DeviceToHost_ms,Total_ms,Status
+OpenCL,MatrixMultiplication,512,1,0.341056,1.678880,0.157408,3.111067,PASS
